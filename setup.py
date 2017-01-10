@@ -22,7 +22,7 @@ def read(file_name):
 
 setup(
     name="nlp_vendor_parsers",
-    version="0.1.0",
+    version="0.1.1",
     author="ryan-panos",
     author_email="randompkp@yahoo.com",
     description=("nlp_vendor_parsers"),

@@ -22,13 +22,14 @@ def read(file_name):
 
 setup(
     name="nlp_vendor_parsers",
-    version="0.1.1",
+    version="0.1.2",
     author="ryan-panos",
     author_email="randompkp@yahoo.com",
     description=("nlp_vendor_parsers"),
     license="Monitor 360 owns code",
     url="https://github.com/ryan-panos/nlp_vendor_parsers.git",
-    # packages=find_packages(exclude=['test']),
+    packages=find_packages(exclude=['test']),
     install_requires=reqs,
+    long_description="A long description in case it is required"
     # long_description=read(file_name='README.md'),
 )

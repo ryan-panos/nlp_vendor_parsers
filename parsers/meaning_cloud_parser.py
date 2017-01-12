@@ -283,7 +283,7 @@ class MeaningCloudParser(JSONNlPParser):
                 offset_w_prfm = offset_w_prfm + len(new_pronoun_insert_str) - len(proform_node[u'form'])
                 offset_ent_only = offset_ent_only + len(new_ent_only_insert_str) - len(proform_node[u'form'])
 
-            print ">> NOW: " + converted_w_ent_only_str
+            print "[in mc_parser >> NOW: " + converted_w_ent_only_str
             self.converted_sentance_w_proform = converted_w_prfm_html_str
             self.converted_sentance_only_ent = converted_w_ent_only_str
             self.scorez = {

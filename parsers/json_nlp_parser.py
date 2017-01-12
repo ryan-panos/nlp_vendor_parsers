@@ -76,7 +76,7 @@ class JSONNlPParser(BaseParser):
 
         ## TODO: decode unicode here!!??!!?
 
-        data = json.loads(str(json_str))
+        data = json.loads(str(json_str.encode('utf-8')))
         # data.close()
         return data
 

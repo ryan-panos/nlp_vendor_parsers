@@ -234,8 +234,8 @@ class MeaningCloudParser(JSONNlPParser):
             # sort by starting position so that we can accumulate the offset from left to right
             sorted_proforms = sorted(the_prop_ls_dict['isAnaphora'], key=lambda k: int(k[u'inip']))
 
-            print " The Entities: " + str(the_prop_ls_dict[u'iof_isAnaphora'])
-            print " The Proforms: " + str(sorted_proforms)
+            # print " The Entities: " + str(the_prop_ls_dict[u'iof_isAnaphora'])
+            # print " The Proforms: " + str(sorted_proforms)
 
             START_TAG_A = '<span eid='
             START_TAG_B = ' class="pronoun_insert">'
@@ -273,7 +273,7 @@ class MeaningCloudParser(JSONNlPParser):
                     print " ***** MISSING *****" # never happens in meaning cloud?
 
                 new_pronoun_insert_str = START_TAG_A + ent_id_str + START_TAG_B + proform_node[u'form'] + "\\" + entity_insert_str + END_TAG
-                print " new_pronoun_insert_str: " + new_pronoun_insert_str
+                # print " new_pronoun_insert_str: " + new_pronoun_insert_str
 
                 new_ent_only_insert_str = entity_insert_str
 

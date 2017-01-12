@@ -165,7 +165,7 @@ class MeaningCloudParser(JSONNlPParser):
                            u'syn_ls': syn_ls
                         }
 
-                        print " syn_ls len : " + str(len(syn_ls))
+                        # print " syn_ls len : " + str(len(syn_ls))
 
                         if u'form' in token_obj: # could there be other ways they store "the word?"
                             syn_ls_dict[u'form'] = token_obj[u'form']

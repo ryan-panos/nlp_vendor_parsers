@@ -195,7 +195,7 @@ class MeaningCloudParser(JSONNlPParser):
         if u'token_list' in self.root_dict:
             the_prop_ls_dict = self._get_all_props_ls(self.root_dict[u'token_list'], prop_ls, the_prop_ls_dict)
         else:
-            print " No token_list in root?"
+            print "2 No token_list in root? " + str(self.root_dict)
             for key, node in self.root_dict.iteritems():
                 print " FOUND: " + key
                 print " IS " + str(node)
@@ -292,7 +292,7 @@ class MeaningCloudParser(JSONNlPParser):
             print "missing_cnt :" + str(missing_cnt)
 
         else:
-            print " No token_list in root?"
+            print "3 No token_list in root? " +str(self.root_dict)
 
 
     def has_antecedent_proform_match(self, proform, antecedent, doSwapOutputs=False):
@@ -304,7 +304,7 @@ class MeaningCloudParser(JSONNlPParser):
         if u'token_list' in self.root_dict:
             the_prop_ls_dict = self._get_all_props_ls(self.root_dict[u'token_list'], prop_ls, the_prop_ls_dict)
         else:
-            print " No token_list in root?"
+            print "1 No token_list in root? " + str(self.root_dict)
 
         if the_prop_ls_dict is None or len(the_prop_ls_dict) < 1 or u'iof_isAnaphora' not in the_prop_ls_dict:
             print " ERROR NO u'iof_isAnaphora', u'isAnaphora'?? ---- looping : " + str(the_prop_ls_dict)

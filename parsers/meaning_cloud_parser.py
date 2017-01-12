@@ -265,7 +265,7 @@ class MeaningCloudParser(JSONNlPParser):
                 curr_pos_ent_only = int(proform_node[u'inip']) + offset_ent_only
                 end_pos_ent_only = int(proform_node[u'inip']) + offset_ent_only + len(proform_node[u'form'])
 
-                entity_insert_str = self._get_antecdenat_str(the_prop_ls_dict[u'iof_isAnaphora'], int(ent_id_str)).encode('utf-8')
+                entity_insert_str = self._get_antecdenat_str(the_prop_ls_dict[u'iof_isAnaphora'], int(ent_id_str)).decode('utf-8')
                 if entity_insert_str is None:
                     entity_insert_str = "[MISSING]"
                     missing_cnt += 1

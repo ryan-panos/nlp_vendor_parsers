@@ -211,7 +211,7 @@ class MeaningCloudParser(JSONNlPParser):
 
         else:
             print "   FOUND:" + str(poss_ls[0][u'form'])
-            return poss_ls[0][u'form']
+            return poss_ls[0][u'form']  # encode here? .decode('utf-8')
 
             #(item for item in of_isAnaphora_ls if int(item[u'id']) == eid).next()
 
@@ -240,8 +240,9 @@ class MeaningCloudParser(JSONNlPParser):
             START_TAG_A = '<span eid='
             START_TAG_B = ' class="pronoun_insert">'
             END_TAG = '</span>'
-            converted_w_prfm_html_str = original_input_str
-            converted_w_ent_only_str = original_input_str
+            converted_w_prfm_html_str = original_input_str.decode('utf-8')
+            # converted_w_ent_only_str = original_input_str.decode('utf-8')
+            converted_w_ent_only_str = converted_w_prfm_html_str
             offset_w_prfm = 0
             offset_ent_only = 0
             missing_cnt = 0
@@ -265,7 +266,7 @@ class MeaningCloudParser(JSONNlPParser):
                 curr_pos_ent_only = int(proform_node[u'inip']) + offset_ent_only
                 end_pos_ent_only = int(proform_node[u'inip']) + offset_ent_only + len(proform_node[u'form'])
 
-                entity_insert_str = self._get_antecdenat_str(the_prop_ls_dict[u'iof_isAnaphora'], int(ent_id_str)).decode('utf-8')
+                entity_insert_str = self._get_antecdenat_str(the_prop_ls_dict[u'iof_isAnaphora'], int(ent_id_str))
                 if entity_insert_str is None:
                     entity_insert_str = "[MISSING]"
                     missing_cnt += 1

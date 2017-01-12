@@ -76,7 +76,8 @@ class JSONNlPParser(BaseParser):
 
         ## TODO: decode unicode here!!??!!?
 
-        data = json.loads(str(json_str))  # MAYE dont decode or encode here if characters are already 0xc3?  Do else where?
+        data = json.loads(json_str)
+        # data = json.loads(str(json_str))  # MAYE dont decode or encode here if characters are already 0xc3?  Do else where?
         # data.close()      .decode('utf-8')
         return data
 

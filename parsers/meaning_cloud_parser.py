@@ -474,10 +474,11 @@ def do_winograd_subs(print_solution=False):
     print "\n\n" + simple_html
 
 
+if __name__ == '__main__':
 # with open('data.json') as data_file:
 #     data = json.load(data_file)
 
-json1 = '{"a": { "b":1 }}'
+    json1 = '{"a": { "b":1 }}'
 
 # mcp = MeaningCloudParser()
 # mcp.load_data(json1)
@@ -499,7 +500,7 @@ json1 = '{"a": { "b":1 }}'
 # # mcp3.test_prop_getter()
 # mcp3.find_swaps()
 
-do_winograd_subs()
+    do_winograd_subs()
 
 # write_dir_subs("")
 # json = [{'entity': 'Carlsbad, California', 'ner_type':'LOCATION'},{'entity': 'Dealstruck Inc', 'ner_type':'ORGANIZATION:COMPANY'}]

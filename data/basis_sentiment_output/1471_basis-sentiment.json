@@ -1,0 +1,42 @@
+{
+  "document": {
+    "confidence": 0.6292362456418954, 
+    "label": "neu"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "$20", 
+      "normalized": "$20", 
+      "sentiment": {
+        "confidence": 0.6292362456418954, 
+        "label": "neu"
+      }, 
+      "type": "IDENTIFIER:MONEY"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T1", 
+      "mention": "$3", 
+      "normalized": "$3", 
+      "sentiment": {
+        "confidence": 0.6292362456418954, 
+        "label": "neu"
+      }, 
+      "type": "IDENTIFIER:MONEY"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "369", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:10:05 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "a2817d70-9c9d-44e0-bf10-0b7ec04a7d26"
+  }
+}

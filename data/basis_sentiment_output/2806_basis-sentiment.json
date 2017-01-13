@@ -1,0 +1,53 @@
+{
+  "document": {
+    "confidence": 0.6040040944750017, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "Japanese", 
+      "normalized": "Japanese", 
+      "sentiment": {
+        "confidence": 0.4570104643300121, 
+        "label": "neu"
+      }, 
+      "type": "NATIONALITY"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T1", 
+      "mention": "Tristate", 
+      "normalized": "Tristate", 
+      "sentiment": {
+        "confidence": 0.5336254211810327, 
+        "label": "neu"
+      }, 
+      "type": "LOCATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T2", 
+      "mention": "8 years", 
+      "normalized": "8 years", 
+      "sentiment": {
+        "confidence": 0.5713510153955216, 
+        "label": "pos"
+      }, 
+      "type": "TEMPORAL:TIME"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "532", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:07:54 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "8dfd1463-d654-4609-8be9-976f485da6d9"
+  }
+}

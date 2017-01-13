@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.730513734887403, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "Japanese", 
+      "normalized": "Japanese", 
+      "sentiment": {
+        "confidence": 0.730513734887403, 
+        "label": "pos"
+      }, 
+      "type": "NATIONALITY"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "225", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:07:10 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "301d1567-b774-4d06-a550-ff5efb9edf71"
+  }
+}

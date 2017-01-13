@@ -1,0 +1,42 @@
+{
+  "document": {
+    "confidence": 0.7924977006189862, 
+    "label": "neg"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "MAC", 
+      "normalized": "MAC", 
+      "sentiment": {
+        "confidence": 0.6800912136795098, 
+        "label": "neg"
+      }, 
+      "type": "PRODUCT"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T1", 
+      "mention": "PC laptop", 
+      "normalized": "PC laptop", 
+      "sentiment": {
+        "confidence": 0.8061232550018415, 
+        "label": "neg"
+      }, 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "370", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:04:00 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "f195db7f-5594-4e8f-a834-5fcfb93e16b8"
+  }
+}

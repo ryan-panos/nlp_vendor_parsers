@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.5361090076073998, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "Q1384", 
+      "mention": "NY", 
+      "normalized": "NY", 
+      "sentiment": {
+        "confidence": 0.6766949746524392, 
+        "label": "neu"
+      }, 
+      "type": "LOCATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "215", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:10:24 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "19668e23-9b1b-4a81-9bc0-91c8057aff90"
+  }
+}

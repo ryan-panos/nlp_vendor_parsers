@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.6225737875136983, 
+    "label": "neg"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "Q30873", 
+      "mention": "dell", 
+      "normalized": "dell", 
+      "sentiment": {
+        "confidence": 0.48391058593987657, 
+        "label": "neg"
+      }, 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "225", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:00:16 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "82656d2b-821c-41f5-a3da-d188a711025c"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "document": {
+    "confidence": 0.6948676956815962, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "Sala", 
+      "normalized": "Sala", 
+      "sentiment": {
+        "confidence": 0.6948676956815962, 
+        "label": "pos"
+      }, 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q869", 
+      "mention": "Thai", 
+      "normalized": "Thai", 
+      "sentiment": {
+        "confidence": 0.6948676956815962, 
+        "label": "pos"
+      }, 
+      "type": "LOCATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "365", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:06:08 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "04c874c6-c7b6-4e2b-9673-f2755d3783c4"
+  }
+}

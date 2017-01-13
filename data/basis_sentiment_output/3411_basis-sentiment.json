@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.5465016435223385, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "Q668", 
+      "mention": "Indian", 
+      "normalized": "Indian", 
+      "sentiment": {
+        "confidence": 0.5465016435223385, 
+        "label": "pos"
+      }, 
+      "type": "LOCATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "222", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:08:05 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "399513e8-d02a-4cf0-a68e-97638216ffa2"
+  }
+}

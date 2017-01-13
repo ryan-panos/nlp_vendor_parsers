@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.6059615868960857, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "Q29643", 
+      "mention": "wifi", 
+      "normalized": "wifi", 
+      "sentiment": {
+        "confidence": 0.6059615868960857, 
+        "label": "pos"
+      }, 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "224", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:00:31 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "675d6ffa-9ab1-43a0-a1fd-810cc1833661"
+  }
+}

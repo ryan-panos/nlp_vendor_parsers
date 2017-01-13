@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.6078795401002703, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "mac book pro", 
+      "normalized": "mac book pro", 
+      "sentiment": {
+        "confidence": 0.6277445600053715, 
+        "label": "pos"
+      }, 
+      "type": "PRODUCT"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "231", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:02:44 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "1f0d7f32-8faf-4dd8-929e-a7553dc411be"
+  }
+}

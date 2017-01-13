@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.6262655045426728, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "Ginger House", 
+      "normalized": "Ginger House", 
+      "sentiment": {
+        "confidence": 0.6502654483955267, 
+        "label": "pos"
+      }, 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "236", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:08:34 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "f1489f13-9570-49fd-ab88-96df8f6af776"
+  }
+}

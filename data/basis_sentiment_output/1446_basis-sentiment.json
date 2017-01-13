@@ -1,0 +1,42 @@
+{
+  "document": {
+    "confidence": 0.9325011190403987, 
+    "label": "neg"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "Q49125", 
+      "mention": "Toshiba", 
+      "normalized": "Toshiba", 
+      "sentiment": {
+        "confidence": 0.42517166882049956, 
+        "label": "neg"
+      }, 
+      "type": "ORGANIZATION"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "T1", 
+      "mention": "$35", 
+      "normalized": "$35", 
+      "sentiment": {
+        "confidence": 0.8988970398894125, 
+        "label": "neg"
+      }, 
+      "type": "IDENTIFIER:MONEY"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "380", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:03:57 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "dd3b42b7-f735-4603-91a3-c10922364418"
+  }
+}

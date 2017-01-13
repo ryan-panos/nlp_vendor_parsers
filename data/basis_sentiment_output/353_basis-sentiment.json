@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.872157541806284, 
+    "label": "neu"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "Q312", 
+      "mention": "Apple", 
+      "normalized": "Apple", 
+      "sentiment": {
+        "confidence": 0.7502482322831631, 
+        "label": "neu"
+      }, 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "223", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 04:58:41 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "5a97ead9-6770-4125-8aeb-2fbe63ebe0bb"
+  }
+}

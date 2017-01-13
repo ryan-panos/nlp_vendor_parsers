@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.6457350182440988, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "Q533415", 
+      "mention": "Best Buy", 
+      "normalized": "Best Buy", 
+      "sentiment": {
+        "confidence": 0.6521234354859006, 
+        "label": "pos"
+      }, 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "233", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:00:54 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "6d737bc1-948a-48f0-96b7-61b26ea5c945"
+  }
+}

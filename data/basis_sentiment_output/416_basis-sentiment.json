@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.7116655711461597, 
+    "label": "neg"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "5 second", 
+      "normalized": "5 second", 
+      "sentiment": {
+        "confidence": 0.507085352266961, 
+        "label": "pos"
+      }, 
+      "type": "TEMPORAL:TIME"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "228", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:02:25 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "634e28b5-0443-48fb-a31d-adb11139e084"
+  }
+}

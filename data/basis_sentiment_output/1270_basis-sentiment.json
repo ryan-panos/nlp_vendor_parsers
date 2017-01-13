@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.7461291669652415, 
+    "label": "neg"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "Q30873", 
+      "mention": "Dell", 
+      "normalized": "Dell", 
+      "sentiment": {
+        "confidence": 0.4796964225934076, 
+        "label": "neg"
+      }, 
+      "type": "ORGANIZATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "224", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:01:52 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "e6877aa6-53de-41d6-bc67-a9e57caaa098"
+  }
+}

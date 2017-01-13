@@ -1,0 +1,42 @@
+{
+  "document": {
+    "confidence": 0.7029020479230219, 
+    "label": "neg"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "One Night", 
+      "normalized": "One Night", 
+      "sentiment": {
+        "confidence": 0.7147175467057162, 
+        "label": "neg"
+      }, 
+      "type": "TEMPORAL:TIME"
+    }, 
+    {
+      "count": 1, 
+      "entityId": "Q1490", 
+      "mention": "Tokyo", 
+      "normalized": "Tokyo", 
+      "sentiment": {
+        "confidence": 0.7029020479230219, 
+        "label": "neg"
+      }, 
+      "type": "LOCATION"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "379", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:07:39 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "db0c6536-109d-4d25-9e2c-75762b9b2a13"
+  }
+}

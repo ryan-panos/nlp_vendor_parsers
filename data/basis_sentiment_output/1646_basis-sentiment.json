@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.6244593826800583, 
+    "label": "pos"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "macbook pro", 
+      "normalized": "macbook pro", 
+      "sentiment": {
+        "confidence": 0.5389874185458151, 
+        "label": "neu"
+      }, 
+      "type": "PRODUCT"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "229", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:01:12 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "24bc6e90-2b73-4410-9692-d2c3e5a6550c"
+  }
+}

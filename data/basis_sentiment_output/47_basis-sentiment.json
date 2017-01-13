@@ -1,0 +1,31 @@
+{
+  "document": {
+    "confidence": 0.7580217489305169, 
+    "label": "neg"
+  }, 
+  "entities": [
+    {
+      "count": 1, 
+      "entityId": "T0", 
+      "mention": "Mac", 
+      "normalized": "Mac", 
+      "sentiment": {
+        "confidence": 0.6059623058484321, 
+        "label": "neg"
+      }, 
+      "type": "PRODUCT"
+    }
+  ], 
+  "responseHeaders": {
+    "Connection": "keep-alive", 
+    "Content-Length": "213", 
+    "Content-Type": "application/json", 
+    "Date": "Fri, 06 Jan 2017 05:00:39 GMT", 
+    "Server": "openresty", 
+    "Strict-Transport-Security": "max-age=63072000; includeSubdomains; preload", 
+    "X-RosetteAPI-App-Id": "1409613691693", 
+    "X-RosetteAPI-Concurrency": "2", 
+    "X-RosetteAPI-ProcessedLanguage": "eng", 
+    "X-RosetteAPI-Request-Id": "f2c37203-3f0f-4922-8f7d-acc4c77ebfaf"
+  }
+}

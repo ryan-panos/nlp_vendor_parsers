@@ -4,7 +4,7 @@ from json_nlp_parser import JSONNlPParser
 import json
 from pprint import pprint
 
-DATA_DIR = '/Users/ryanpanos/Documents/code/nlp-parsers/data/'
+DATA_DIR = '/Users/ryanpanos/Documents/code/nlp_vendor_parsers/data/'
 
 class MeaningCloudParser(JSONNlPParser):
 
@@ -416,7 +416,7 @@ def do_winograd_subs(print_solution=False):
 
     SOL_HEAD_HTML = '<div class="mc_sol"><p>'
     SOL_TAIL_HTML = '</div>'
-    SCR_HEAD_HTML = '<span class="mc_scr">'
+    SCR_HEAD_HTML = '<span class="mc_scr"> '
     SCR_TAIL_HTML = '</span>'
     sol_html = ""
     simple_html = ""
@@ -453,8 +453,9 @@ def do_winograd_subs(print_solution=False):
                 if mcp.converted_sentance_w_proform is not None:
                     if mcp.scorez is not None and "missing_perc" in mcp.scorez:
                         score_txt = "score: " + str(mcp.scorez["missing_perc"])
-                    sol_html += SOL_HEAD_HTML + mcp.converted_sentance_w_proform + SCR_HEAD_HTML + score_txt + SCR_TAIL_HTML + \
-                                SOL_TAIL_HTML
+                    # sol_html += SOL_HEAD_HTML + mcp.converted_sentance_w_proform + SCR_HEAD_HTML + score_txt + SCR_TAIL_HTML + \
+                    #             SOL_TAIL_HTML
+                    sol_html += SOL_HEAD_HTML + mcp.converted_sentance_w_proform + SOL_TAIL_HTML
 
                 if mcp.converted_sentance_only_ent is not None:
                     simple_html += mcp.converted_sentance_only_ent + "  "

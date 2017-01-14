@@ -210,12 +210,12 @@ class MeaningCloudParser(JSONNlPParser):
             return None
 
         else:
-            print "   FOUND:" + str(poss_ls[0][u'form'])
+            # print "   FOUND:" + str(poss_ls[0][u'form'])  # this will bomb on unecode
             return poss_ls[0][u'form']  # encode here? .decode('utf-8')
 
             #(item for item in of_isAnaphora_ls if int(item[u'id']) == eid).next()
 
-
+    ## TODO: determine and confirm when this might return NONE or set the attributes to NONE!
     def find_swaps(self, original_input_str):
 
         prop_ls = [u'iof_isAnaphora', u'isAnaphora']
@@ -250,12 +250,12 @@ class MeaningCloudParser(JSONNlPParser):
                 ent_id_ls = proform_node[u'syn_ls']
 
                 if len(ent_id_ls) > 1:
-                    print " ## MORE THAN ONE ENTITY?  HOPEFULLY SAME VALUE!  TAKING TOP "
+                    # print " ## MORE THAN ONE ENTITY?  HOPEFULLY SAME VALUE!  TAKING TOP "
                     ent_id_str = str(ent_id_ls[0])
                 elif len(ent_id_ls) == 1:
                     ent_id_str = str(ent_id_ls[0])
                 else:
-                    print " >> NO ENTITIY ID FOR " + str(proform_node[u'syn_ls'])
+                    print " %%% NO ENTITIY ID FOR " + str(proform_node[u'syn_ls'])
                     continue
 
 
@@ -326,12 +326,12 @@ class MeaningCloudParser(JSONNlPParser):
                     # does this node have the same id as in proform_id_ls?
                     if str(poss_proform_node[u'id']) in proform_id_ls:
                         criteria_cnt += 1
-                        print " proform id is in antcendant id list!" + str(poss_proform_node[u'id'])
+                        # print " proform id is in antcendant id list!" + str(poss_proform_node[u'id'])
 
                     # also does antecedent_id exist in this syn_ls?
                     if antecedent_id in poss_proform_node[u'syn_ls']:
                         criteria_cnt += 1
-                        print " antecedant id is in antcendant syn_ls! " + str(antecedent_id)
+                        # print " antecedant id is in antcendant syn_ls! " + str(antecedent_id)
 
                     # is this where we know? - DEPENDANT ON KNOWING antecedent here!
                     # if criteria_cnt == 2:
@@ -341,12 +341,12 @@ class MeaningCloudParser(JSONNlPParser):
 
                     if str(poss_proform_node[u'form']).replace('\.','').lower() == proform.lower().replace('."',''):
                         criteria_cnt += 1
-                        print " And proform matches!! " + str(proform)
+                        # print " And proform matches!! " + str(proform)
                     else:
                         print " Maybe missing proform match :" + str(poss_proform_node[u'form']) + "|=|" + proform + "|"
                         print " >> **NOT** found solution " + str(poss_antecedent) + "|=|" + str(poss_proform_node)
 
-                    print " criteria_cnt = " + str(criteria_cnt)
+                    # print " criteria_cnt = " + str(criteria_cnt)
 
                     if criteria_cnt != 3:
                         # print " FAIL? "

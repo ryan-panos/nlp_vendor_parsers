@@ -55,9 +55,7 @@ class BasisParser(JSONNlPParser):
 
         return self._sentiments
         
-        
-        
-        
+
     def load_data(self, json_str):
 
         if json_str is not None and len(json_str) > 0:

@@ -283,13 +283,13 @@ class MeaningCloudParser(JSONNlPParser):
                 offset_w_prfm = offset_w_prfm + len(new_pronoun_insert_str) - len(proform_node[u'form'])
                 offset_ent_only = offset_ent_only + len(new_ent_only_insert_str) - len(proform_node[u'form'])
 
-            print "[in mc_parser >> NOW: " + converted_w_ent_only_str
+            # print "[in mc_parser >> NOW: " + converted_w_ent_only_str
             self.converted_sentance_w_proform = converted_w_prfm_html_str
             self.converted_sentance_only_ent = converted_w_ent_only_str
             self.scorez = {
                 "missing_perc": float(missing_cnt/float(len(sorted_proforms)))
             }
-            print "missing_cnt :" + str(missing_cnt)
+            # print "missing_cnt :" + str(missing_cnt)
 
         else:
             print "3 No token_list in root? " +str(self.root_dict)

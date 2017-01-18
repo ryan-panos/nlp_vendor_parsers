@@ -16,6 +16,9 @@ class MeaningCloudParser(JSONNlPParser):
         self.converted_sentance_w_proform = None
         self.converted_sentance_only_ent = None
         self.scorez = None
+        self.error_type = None
+        self.error_status = None
+
         super(MeaningCloudParser, self).__init__(self)
 
     def load_data(self, json_str):
@@ -214,6 +217,12 @@ class MeaningCloudParser(JSONNlPParser):
             return poss_ls[0][u'form']  # encode here? .decode('utf-8')
 
             #(item for item in of_isAnaphora_ls if int(item[u'id']) == eid).next()
+    def _tag_possible_error(self):
+
+        if self.root_dict is not None and u'status' in self.root_dict:
+            self.error_status = self.root_dict[u'status']
+        else:
+            self.error_status = None  # Moot?
 
     ## TODO: determine and confirm when this might return NONE or set the attributes to NONE!
     def find_swaps(self, original_input_str):
@@ -293,6 +302,7 @@ class MeaningCloudParser(JSONNlPParser):
 
         else:
             print "3 No token_list in root? " +str(self.root_dict)
+            self._tag_possible_error()
 
 
     def has_antecedent_proform_match(self, proform, antecedent, doSwapOutputs=False):

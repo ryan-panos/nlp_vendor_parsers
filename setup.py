@@ -30,6 +30,6 @@ setup(
     url="https://github.com/ryan-panos/nlp_vendor_parsers.git",
     packages=find_packages(exclude=['test']),
     install_requires=reqs,
-    long_description="A long description in case it is required"
+    long_description="A long description in case it is required - I rule."
     # long_description=read(file_name='README.md'),
 )

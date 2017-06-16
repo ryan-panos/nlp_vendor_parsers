@@ -26,6 +26,7 @@ class MeaningCloudParser(JSONNlPParser):
         if json_str is not None and len(json_str) > 0:
             self.root_str = super(MeaningCloudParser, self).save_data(json_str)
 
+        # This just does jsonLoad
         if self.root_str is not None and len(json_str) > 0:
             self.root_dict = super(MeaningCloudParser, self).load_data(self.root_str)
             # print " > 1 > self.root: " + str(self.root_dict)
@@ -125,7 +126,6 @@ class MeaningCloudParser(JSONNlPParser):
         #     find ALL appropriate
 
     def _get_syntactic_tree_relation_ids_ls(self, token_obj, sought_property):
-        # if hasattr(token_obj, "syntactic_tree_relation_list"):
         if u'syntactic_tree_relation_list' in token_obj:
             # print ' ------  FOUND syntactic_tree_relation_list: ' + str(token_obj[u'syntactic_tree_relation_list'])
 
@@ -145,6 +145,11 @@ class MeaningCloudParser(JSONNlPParser):
             # print ">> syntactic_tree_relation_list missing: " + str(token_obj) # NORMAL AT MANY NODES!
             return None
 
+
+    """
+    This creates a dict of lists based on the properties ( like isAnaphora ) needed.
+    Each memebr of said list will have the key data (form, id, inip)
+    """
     # todo - possiblyt make a wrapper "public" version that does not expect an empty the_prop_ls_dict
     def _get_all_props_ls(self, token_ls, prop_ls, the_prop_ls_dict):
 
@@ -160,6 +165,7 @@ class MeaningCloudParser(JSONNlPParser):
                 # print " WIll examine: " + str(token_obj)
 
                 for prop in prop_ls:
+                    # given a property (like isAnaphora) 761
                     syn_ls = self._get_syntactic_tree_relation_ids_ls(token_obj, prop)
                     if syn_ls is not None and len(syn_ls) > 0:
 
@@ -191,7 +197,6 @@ class MeaningCloudParser(JSONNlPParser):
             return the_prop_ls_dict
 
 
-
     def test_prop_getter(self):
         prop_ls = [u'iof_isAnaphora', u'isAnaphora']
         the_prop_ls_dict = {} #todo - rename?
@@ -204,7 +209,9 @@ class MeaningCloudParser(JSONNlPParser):
                 print " IS " + str(node)
 
 
-        # print " >> the_prop_ls_dict: " + str(the_prop_ls_dict)
+    """
+        Give the of_isAnaphora_ls, get the member with id=eid
+    """
     def _get_antecdenat_str(self, of_isAnaphora_ls, eid):
 
         poss_ls = filter(lambda ent_node: int(ent_node[u'id']) == eid, of_isAnaphora_ls)
@@ -224,10 +231,11 @@ class MeaningCloudParser(JSONNlPParser):
         else:
             self.error_status = None  # Moot?
 
+    # KEy code for Gutch
     ## TODO: determine and confirm when this might return NONE or set the attributes to NONE!
     def find_swaps(self, original_input_str):
 
-        prop_ls = [u'iof_isAnaphora', u'isAnaphora']
+        prop_ls = [u'iof_isAnaphora', u'isAnaphora']  # thoe only two properties we care about for Coref
         the_prop_ls_dict = {}  # todo - rename?
         if u'token_list' in self.root_dict:
 
@@ -268,13 +276,13 @@ class MeaningCloudParser(JSONNlPParser):
                     continue
 
 
-
                 curr_pos_w_prfm = int(proform_node[u'inip']) + offset_w_prfm
                 end_pos_w_prfm = int(proform_node[u'inip']) + offset_w_prfm + len(proform_node[u'form'])
 
                 curr_pos_ent_only = int(proform_node[u'inip']) + offset_ent_only
                 end_pos_ent_only = int(proform_node[u'inip']) + offset_ent_only + len(proform_node[u'form'])
 
+                # get the entity that this proform belongs to
                 entity_insert_str = self._get_antecdenat_str(the_prop_ls_dict[u'iof_isAnaphora'], int(ent_id_str))
                 if entity_insert_str is None:
                     entity_insert_str = "[MISSING]"

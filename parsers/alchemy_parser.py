@@ -12,7 +12,7 @@ class AlchemyParser(JSONNlPParser):
         # self.converted_sentance_w_proform = None
         # self.converted_sentance_only_ent = None
         # self.scorez = None
-        super(BasisParser, self).__init__(self)
+        super(AlchemyParser, self).__init__(self)
 
     # def _load_entities(self):
     #

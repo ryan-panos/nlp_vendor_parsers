@@ -148,7 +148,7 @@ class MeaningCloudParser(JSONNlPParser):
 
     """
     This creates a dict of lists based on the properties ( like isAnaphora ) needed.
-    Each memebr of said list will have the key data (form, id, inip)
+    Each memebr of said list will have the key data (form, id, inip, syn_ls)
     """
     # todo - possiblyt make a wrapper "public" version that does not expect an empty the_prop_ls_dict
     def _get_all_props_ls(self, token_ls, prop_ls, the_prop_ls_dict):
@@ -244,6 +244,7 @@ class MeaningCloudParser(JSONNlPParser):
             # the_prop_ls_dict['isAnaphora'] = the_prop_ls_dict['isAnaphora'].sort(key=lambda x: (  int(x[u'inip']),
             #                                                                             print str(x[u'inip'])))  # , reverse=True
 
+            # these are the pronouns
             if 'isAnaphora' not in the_prop_ls_dict or len(the_prop_ls_dict['isAnaphora']) == 0:
                 print " %% No isAnaphora for " + original_input_str
                 return
@@ -274,7 +275,6 @@ class MeaningCloudParser(JSONNlPParser):
                 else:
                     print " %%% NO ENTITIY ID FOR " + str(proform_node[u'syn_ls'])
                     continue
-
 
                 curr_pos_w_prfm = int(proform_node[u'inip']) + offset_w_prfm
                 end_pos_w_prfm = int(proform_node[u'inip']) + offset_w_prfm + len(proform_node[u'form'])
